@@ -1,0 +1,22 @@
+.frame{
+    border-radius: 6px;
+    width: 830px;
+    height: 630px;
+    background-color: #2aabd2;
+    margin: auto;
+    padding: 15px;
+}
+
+.zone{
+    width: 800px;
+    height: 600px;
+    background-color: #ffffff;
+    margin: auto;
+}
+
+.snake{
+    width: 20px;
+    height: 20px;
+    background-color: #285e8e;
+    position: relative;
+}

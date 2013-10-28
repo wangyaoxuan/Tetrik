@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="241e1df3-5220-4284-b8d0-b8e4a0cd2d71" name="Default" comment="" />
+    <ignored path="guim.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="guim" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="40" selection-start="247" selection-end="247" vertical-scroll-proportion="0.3024055" vertical-offset="9" max-vertical-offset="882">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cube.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/cube.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="14" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0" vertical-offset="143" max-vertical-offset="1806">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cube.jade" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/cube.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="303" column="45" selection-start="9081" selection-end="9081" vertical-scroll-proportion="0.0" vertical-offset="6195" max-vertical-offset="9387">
+              <folding>
+                <marker date="1382713999639" expanded="true" signature="1491:1993" placeholder="[...]" />
+                <marker date="1382713999639" expanded="true" signature="2014:2516" placeholder="[...]" />
+                <marker date="1382713999639" expanded="true" signature="2540:3330" placeholder="[...]" />
+                <marker date="1382713999639" expanded="true" signature="2550:2652" placeholder="[...]" />
+                <marker date="1382713999639" expanded="true" signature="2662:2764" placeholder="[...]" />
+                <marker date="1382713999639" expanded="true" signature="2774:2876" placeholder="[...]" />
+                <marker date="1382713999639" expanded="true" signature="2886:2988" placeholder="[...]" />
+                <marker date="1382713999639" expanded="true" signature="2998:3100" placeholder="[...]" />
+                <marker date="1382713999639" expanded="true" signature="3110:3212" placeholder="[...]" />
+                <marker date="1382713999639" expanded="true" signature="3222:3324" placeholder="[...]" />
+                <marker date="1382713999639" expanded="true" signature="3509:3676" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="3719:4101" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="3750:4095" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="3872:3929" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="3950:4008" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="4131:4202" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="4229:4955" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="4303:4948" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="4977:5043" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="5066:5122" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="5144:5506" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="5268:5438" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="5306:5428" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="5527:6263" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="5561:5913" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="5599:5903" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="5710:5889" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="5946:6106" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="5984:6096" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="6024:6082" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="6291:7205" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="6327:6842" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="6365:6832" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="6439:6818" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="6487:6711" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="6537:6689" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="6585:6663" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="6877:7199" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="6915:7189" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="6951:7175" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="7230:7963" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="7266:7576" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="7304:7566" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="7378:7427" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="7505:7552" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="7611:7934" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="7649:7924" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="7685:7910" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="7989:8716" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="8025:8335" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="8063:8325" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="8137:8186" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="8264:8311" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="8370:8687" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="8408:8677" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="8444:8663" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="8741:9565" placeholder="{...}" />
+                <marker date="1382713999639" expanded="true" signature="8741:8916" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/views/layout.ejs" />
+        <option value="$PROJECT_DIR$/views/index.ejs" />
+        <option value="$PROJECT_DIR$/public/stylesheets/Test.css" />
+        <option value="$PROJECT_DIR$/views/snake.jade" />
+        <option value="$PROJECT_DIR$/public/stylesheets/snake.css" />
+        <option value="$PROJECT_DIR$/public/javascripts/snake.js" />
+        <option value="$PROJECT_DIR$/views/file.jade" />
+        <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/views/login.jade" />
+        <option value="$PROJECT_DIR$/views/register.jade" />
+        <option value="$PROJECT_DIR$/views/index.jade" />
+        <option value="$PROJECT_DIR$/views/repository.jade" />
+        <option value="$PROJECT_DIR$/public/javascripts/cube.js" />
+        <option value="$PROJECT_DIR$/public/stylesheets/cube.css" />
+        <option value="$PROJECT_DIR$/views/cube.jade" />
+        <option value="$PROJECT_DIR$/app.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents ProjectPane="true" />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Jade" />
+    <property name="recentsLimit" value="5" />
+    <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RunManager" selected="Node.js.app.js">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="$PROJECT_DIR$">
+      <browser start="false" url="" with-js-debugger="false" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.app.js" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="241e1df3-5220-4284-b8d0-b8e4a0cd2d71" name="Default" comment="" />
+      <created>1377674320751</created>
+      <updated>1377674320751</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="1" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15104167" sideWeight="0.7120709" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28792912" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28792912" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="43" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="693" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="569" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="31" selection-end="107" vertical-scroll-proportion="0.18453427" vertical-offset="0" max-vertical-offset="569" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/snake.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="22" selection-start="568" selection-end="568" vertical-scroll-proportion="0.0" vertical-offset="294" max-vertical-offset="441" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/snake.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="23" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="567" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/snake.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="44" selection-start="835" selection-end="835" vertical-scroll-proportion="0.68728524" vertical-offset="198" max-vertical-offset="1071" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="43" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="693" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/Test.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="1" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0" vertical-offset="668" max-vertical-offset="1281" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/register.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="31" selection-start="4005" selection-end="4005" vertical-scroll-proportion="0.0" vertical-offset="1214" max-vertical-offset="1827" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/login.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="58" selection-start="3260" selection-end="3260" vertical-scroll-proportion="0.0" vertical-offset="920" max-vertical-offset="1533" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="31" selection-start="2129" selection-end="2129" vertical-scroll-proportion="0.0" vertical-offset="500" max-vertical-offset="1113" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/repository.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="46" selection-start="1010" selection-end="1010" vertical-scroll-proportion="-20.16" vertical-offset="0" max-vertical-offset="1008" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/cube.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="17" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0" vertical-offset="840" max-vertical-offset="2016" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/cube.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="14" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0" vertical-offset="143" max-vertical-offset="1806">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/cube.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="303" column="45" selection-start="9081" selection-end="9081" vertical-scroll-proportion="0.0" vertical-offset="6195" max-vertical-offset="9387">
+          <folding>
+            <marker date="1382713999639" expanded="true" signature="1491:1993" placeholder="[...]" />
+            <marker date="1382713999639" expanded="true" signature="2014:2516" placeholder="[...]" />
+            <marker date="1382713999639" expanded="true" signature="2540:3330" placeholder="[...]" />
+            <marker date="1382713999639" expanded="true" signature="2550:2652" placeholder="[...]" />
+            <marker date="1382713999639" expanded="true" signature="2662:2764" placeholder="[...]" />
+            <marker date="1382713999639" expanded="true" signature="2774:2876" placeholder="[...]" />
+            <marker date="1382713999639" expanded="true" signature="2886:2988" placeholder="[...]" />
+            <marker date="1382713999639" expanded="true" signature="2998:3100" placeholder="[...]" />
+            <marker date="1382713999639" expanded="true" signature="3110:3212" placeholder="[...]" />
+            <marker date="1382713999639" expanded="true" signature="3222:3324" placeholder="[...]" />
+            <marker date="1382713999639" expanded="true" signature="3509:3676" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="3719:4101" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="3750:4095" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="3872:3929" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="3950:4008" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="4131:4202" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="4229:4955" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="4303:4948" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="4977:5043" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="5066:5122" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="5144:5506" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="5268:5438" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="5306:5428" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="5527:6263" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="5561:5913" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="5599:5903" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="5710:5889" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="5946:6106" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="5984:6096" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="6024:6082" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="6291:7205" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="6327:6842" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="6365:6832" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="6439:6818" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="6487:6711" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="6537:6689" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="6585:6663" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="6877:7199" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="6915:7189" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="6951:7175" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="7230:7963" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="7266:7576" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="7304:7566" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="7378:7427" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="7505:7552" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="7611:7934" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="7649:7924" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="7685:7910" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="7989:8716" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="8025:8335" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="8063:8325" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="8137:8186" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="8264:8311" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="8370:8687" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="8408:8677" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="8444:8663" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="8741:9565" placeholder="{...}" />
+            <marker date="1382713999639" expanded="true" signature="8741:8916" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="40" selection-start="247" selection-end="247" vertical-scroll-proportion="0.3024055" vertical-offset="9" max-vertical-offset="882">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

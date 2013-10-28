@@ -1,0 +1,441 @@
+//
+   Created by kazuha on 13-10-10.
+html
+    head
+        link(rel="stylesheet",type="text/css",href="/stylesheets/cube.css")
+        link(href="/stylesheets/bootstrap.min.css",rel="stylesheet",media="screen")
+        link(href="/stylesheets/bootstrap-theme.min.css",rel="stylesheet",media="screen")
+        script(src="/javascripts/bootstrap.min.js")
+        script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js")
+        title=Title
+    body
+        .frame
+            .inner_frame
+                .zone
+                    .mask PAUSE
+                    .layout
+            .side_frame
+                h2(class='score') Score
+                .nextBlock
+                h2(style='font-family:cursive') your ID:
+                input(type='text',class='form-control',id='name')
+
+                br
+                button(type='button',class='btn btn-primary',id='start',onclick='start()',style='font-family:cursive') start
+                br
+                button(type='button',class='btn btn-primary',id='pause',onclick='pause()',style='font-family:cursive') pause
+                br
+                button(type='button',class='btn btn-primary',id='pause',onclick='resume()',style='font-family:cursive') resume
+                br
+                input(type='checkbox',style='font-family:cursive',class='fall_style')
+                label(style='font-family:cursive;margin-left:4px;margin-top:20px') fall immediately
+
+
+script(type='text/javascript')
+    var loc = [
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,1,1,1,1,1,1,1,1,1]
+    ];
+
+    var loc_tmp = [
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,0,0,0,0,0,0,0,0,1],
+        [1,1,1,1,1,1,1,1,1,1]
+    ];
+
+    var block_item = [
+        [
+            [0,2,2,0],
+            [0,2,2,0],
+            [0,0,0,0],
+            [0,0,0,0]
+        ],
+        [
+            [0,2,0,0],
+            [0,2,0,0],
+            [0,2,0,0],
+            [0,2,0,0]
+        ],
+        [
+            [0,2,0,0],
+            [2,2,2,0],
+            [0,0,0,0],
+            [0,0,0,0]
+        ],
+        [
+            [0,2,0,0],
+            [0,2,2,0],
+            [0,0,2,0],
+            [0,0,0,0]
+        ],
+        [
+            [0,0,2,0],
+            [0,2,2,0],
+            [0,2,0,0],
+            [0,0,0,0]
+        ],
+        [
+            [0,2,2,0],
+            [0,0,2,0],
+            [0,0,2,0],
+            [0,0,0,0]
+        ],
+        [
+            [0,2,2,0],
+            [0,2,0,0],
+            [0,2,0,0],
+            [0,0,0,0]
+        ]
+    ];
+
+    var score = 0;
+    var gameScore = document.createElement('p');
+    var moveInt;
+    var pre_ran;
+    var ran = parseInt(Math.random()*6);
+
+    $(document).ready(function(){
+        gameScore.id = 'gameScore';
+        gameScore.innerText = score + '';
+        gameScore.style.color = '#ffffff';
+        $('.score').append(gameScore);
+    });
+
+    $(document).keydown(function(event){
+        switch(event.keyCode){
+            case 38:findPoint();break;
+            case 40:
+                if($('.fall_style').attr('checked') == true){
+                    moveDown();break;
+                }
+                else{
+                    moveBlock();break;
+                }
+            case 37:moveLeft();break;
+            case 39:moveRight();break;
+        }
+    });
+
+    function setScore(add){
+        score += add;
+        gameScore.innerText = score + '';
+    }
+
+    function accelerate(){
+        clearInterval(moveInt);
+        switch (Math.ceil(score / 5000)){
+            case -3:moveInt = setInterval(moveBlock,400);break;
+            case -2:moveInt = setInterval(moveBlock,650);break;
+            case -1:moveInt = setInterval(moveBlock,700);break;
+            case 0:moveInt = setInterval(moveBlock,800);break;
+            case 1:moveInt = setInterval(moveBlock,700);break;
+            case 2:moveInt = setInterval(moveBlock,650);break;
+            case 3:moveInt = setInterval(moveBlock,520);break;
+            case 4:moveInt = setInterval(moveBlock,400);break;
+            case 5:moveInt = setInterval(moveBlock,200);break;
+            default:moveInt = setInterval(moveBlock,100);break;
+        }
+
+    }
+
+    function pause(){
+        $('.zone').hide();
+        clearInterval(moveInt);
+    }
+
+    function resume(){
+        $('.zone').show();
+        accelerate();
+    }
+
+    function start(){
+        score = 0;
+        gameScore.innerText = 0 + '';
+        clearInterval(moveInt);
+        for(var i = 0;i < 15;i++){
+            for(var j = 1;j < 9;j++){
+                loc[i][j] = 0;
+                loc_tmp[i][j] = 0;
+                $('#' + i + j).remove();
+            }
+        }
+        moveInt = setInterval(moveBlock,800);
+        init();
+    }
+
+    function init(){
+        for(var i = 0;i < 4;i++){
+            for(var j = 0;j < 4;j++){
+                loc[i][j + 3] = loc[i][j + 3] | block_item[ran][i][j];
+                if(loc[i][j + 3] == 3){
+                    var SB = $('#name')[0];
+                    alert('弱B' + SB.value);
+                    clearInterval(moveInt);
+                    return;
+                }
+            }
+        }
+        for(var i = 0;i < 4;i++){
+            for(var j = 0;j < 4;j++){
+                if(loc[i][j + 3] == 2){
+                    newBlock(i,j + 3);
+                }
+            }
+        }
+        pre_ran = ran;
+        ran = parseInt(Math.random()*6);
+        $('.nextBlock').css({'backgroundImage':'url(/images/block_' + ran + '.png)'});
+    }
+
+
+
+    function moveBlock(){
+        for(var i = 14;i >= 0;i--){
+            for(var j = 1;j < 9;j++){
+                if(loc[i][j] == 2 && ((loc[i][j] | loc[i + 1][j]) == 3)){
+                    for(var m = 14;m >= 0;m--){
+                        for(var n = 1;n < 9;n++){
+                            if(loc[m][n] == 2){
+                                loc[m][n] = 1;
+                            }
+                        }
+                    }
+                    cleanLine();
+                    init();
+                    return;
+                }
+            }
+        }
+        for(var i = 14;i >= 0;i--){
+            for(var j = 1;j < 9;j++){
+                if(loc[i][j] == 2){
+                    loc[i][j] = 0;
+                    loc[i + 1][j] = 2;
+                    $('#' + i + j).css({top:(i + 1) * 40 + 'px'});
+                    $('#' + i + j).attr('id',(i + 1) + '' + j);
+                }
+            }
+        }
+    }
+
+    function moveLeft(){
+        for(var i = 14;i >= 0;i--){
+            for(var j = 1;j < 9;j++){
+                if(loc[i][j] == 2 && ((loc[i][j] | loc[i][j - 1]) != 3)){
+                    continue;
+                }
+                else if(loc[i][j] == 2 && ((loc[i][j] | loc[i][j - 1]) == 3)){
+                    return;
+                }
+            }
+        }
+        for(var i = 14;i >= 0;i--){
+            for(var j = 1;j < 9;j++){
+                if(loc[i][j] == 2){
+                    loc[i][j] = 0;
+                    loc[i][j - 1] = 2;
+                    $('#' + i + j).css({left:(j - 2) * 40 + 'px'});
+                    $('#' + i + j).attr('id',i + '' + (j - 1));
+                }
+            }
+        }
+        setScore(-24);
+    }
+
+    function moveRight(){
+        for(var i = 14;i >= 0;i--){
+            for(var j = 8;j > 0;j--){
+                if(loc[i][j] == 2 && ((loc[i][j] | loc[i][j + 1]) != 3)){
+                    continue;
+                }
+                else if(loc[i][j] == 2 && ((loc[i][j] | loc[i][j + 1]) == 3)){
+                    return;
+                }
+            }
+        }
+        for(var i = 14;i >= 0;i--){
+            for(var j = 8;j > 0;j--){
+                if(loc[i][j] == 2){
+                    loc[i][j] = 0;
+                    loc[i][j + 1] = 2;
+                    $('#' + i + j).css({left:j * 40 + 'px'});
+                    $('#' + i + j).attr('id',i + '' + (j + 1));
+                }
+            }
+        }
+        setScore(-24);
+    }
+
+    function moveDown(){
+        var tip = 0;
+        var dis = 14;
+        for(var i = 14;i >= 0;i--){
+            for(var j = 1;j < 9;j++){
+                if(loc[i][j] == 2){
+                    for(tip = i + 1;tip < 16;tip++){
+                        if(((loc[tip][j] | loc[i][j]) == 3) && ((tip - i - 1) < dis)){
+                            dis = tip - i - 1;
+                        }
+                    }
+                }
+            }
+        }
+        //document.write(dis + '');
+        for(var i = 14;i >= 0;i--){
+            for(var j = 1;j < 9;j++){
+                if(loc[i][j] == 2){
+                    loc[i][j] = 0;
+                    loc[i + dis][j] = 1;
+                    $('#' + i + j).remove();
+                    newBlock(i + dis,j);
+                }
+            }
+        }
+        cleanLine();
+        init();
+    }
+
+    function findPoint(){
+        if(pre_ran == 0)return;
+        var linkNode = 0;
+        var ic = 0;
+        var jc = 0;
+        cleanState();
+        for(var i = 14;i >= 0;i--){
+            for(var j = 1;j < 9;j++){
+                if(loc[i][j] == 2){
+                    if(loc[i + 1][j] == 2){
+                        linkNode++;
+                    }
+                    if(loc[i][j + 1] == 2){
+                        linkNode++;
+                    }
+                    if(loc[i - 1][j] == 2){
+                        linkNode++;
+                    }
+                    if(loc[i][j - 1] == 2){
+                        linkNode++;
+                    }
+                }
+                if(linkNode >= 2){
+                    ic = i;
+                    jc = j;
+                    if(spin(ic,jc)){return;}
+                    else{
+                        cleanState();
+                        linkNode = 0;
+                        }
+                }
+                else{
+                    linkNode = 0;
+                }
+            }
+        }
+    }
+
+    function spin(ic,jc){
+        for(var i = 14;i >= 0;i--){
+            for(var j = 1;j < 9;j++){
+                if(loc[i][j] == 2){
+                    if((loc_tmp[ic + j - jc][jc + ic - i] = loc[ic + j - jc][jc + ic - i] | 2) == 3){
+                        return false;
+                    }
+                }
+            }
+        }
+        for(var i = 14;i >= 0;i--){
+            for(var j = 1;j < 9;j++){
+                if(loc[i][j] == 2){
+                    loc[i][j] = 0;
+                    $('#' + i + j).remove();
+                }
+            }
+        }
+        for(var i = 14;i >= 0;i--){
+            for(var j = 1;j < 9;j++){
+                if(loc_tmp[i][j] == 2){
+                    loc[i][j] = 2;
+                    newBlock(i,j);
+                }
+            }
+        }
+        setScore(-24);
+        return true;
+    }
+
+    function cleanLine(){
+        var count = 0;
+        var tip = 14;
+        while(tip > 0){
+            count = 0;
+            for(var j = 1;j < 9;j++){
+                if(loc[tip][j] == 1){count++;}
+            }
+            if(count == 8){
+                for(var l = 1;l < 9;l++){
+                    loc[tip][l] = 0;
+                    $('#' + tip + l).remove();
+                }
+                for(var m = tip - 1;m >= 0;m--){
+                    for(var n = 1;n < 9;n ++){
+                        loc[m + 1][n] = loc[m][n];
+                        $('#' + m + n).css({top:(m + 1) * 40 + 'px'});
+                        $('#' + m + n).attr('id',m + 1 + '' + n);
+                    }
+                }
+                setScore(600);
+            }
+            else{
+                tip --;
+            }
+        }
+        accelerate();
+    }
+
+    function cleanState(){
+        for(var i = 14;i >= 0;i--){
+            for(var j = 1;j < 9;j++){
+                loc_tmp[i][j] = 0;
+            }
+        }
+    }
+
+    function newBlock(i,j){
+        var newblock = document.createElement('div');
+        newblock.id = i + '' + j;
+        newblock.style.backgroundImage = 'url(/images/block.png)';
+        newblock.style.position = 'absolute';
+        newblock.style.width = '40px';
+        newblock.style.height = '40px';
+        //newblock.innerText = ic + ',' + jc;
+        $('.layout').append(newblock);
+        newblock.style.left = (j - 1) * 40 + 'px';
+        newblock.style.top = i * 40 + 'px';
+    }
